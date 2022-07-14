@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Library</title>
+    <link rel="stylesheet" href="libraryStyle.css">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="icon" href="library.png" type="image/icon type">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="projectLibrary.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>My Library</h1>
+        </header>
+    
+        <div class="description">
+            <p>This is a project for <i>The Odin Project</i> in which I have to make a library using</p>
+            <p>using <i>Object Constructors</i> </p>
+        </div>
+    
+        <div class="addingbook">
+            <button class="addBook">Add Book</button>
+        </div>
+
+        <div class="bookShelf">
+    
+            <div class="card cardn" data-index="NaN">
+                <p class="title">John Doe</p>
+                <p class="author">Angela Duckworth</p>
+                <p class="pages">200 Pages</p>
+                <div class="buttons">
+                    <button class="read">Read</button>
+                    <button class="delete deleteN">Delete</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="addbook-dialog">
+        <span class="material-symbols-outlined btnClose">
+            close
+        </span>
+        <form method="dialog" class="input-dialog">
+            <label for="booktitle">Book Title</label>
+            <input type="text" name="booktitle" id="bookname">
+            <label for="bookauthor">Book Author</label>
+            <input type="text" name="bookauthor" id="bookauthor">
+            <label for="bookpages">Book Pages</label>
+            <input type="text" name="bookpages" id="bookpages">
+            <button type="submit" class="btnAddBook">Add Book</button>
+        </form>
+    </div>
+    
+</body>
+</html>
