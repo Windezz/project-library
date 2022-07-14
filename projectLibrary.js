@@ -80,8 +80,13 @@ function addBookToLibrary(name, author, numberOfPages) {
     })
 
     readButton.addEventListener('mouseover', (event) => {
-        readButton.style.backgroundColor = "greenyellow";
-        readButton.style.color = "black";
+        if(!(newBook.read)) {
+            readButton.style.backgroundColor = "greenyellow";
+            readButton.style.color = "black";
+        } else {
+            readButton.style.backgroundColor = "rgb(141, 0, 0)";
+            readButton.style.color = "white";
+        }
     })
 
     readButton.addEventListener('mouseout', (event) => {
